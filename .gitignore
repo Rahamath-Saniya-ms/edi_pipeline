@@ -11,3 +11,7 @@ venv/
 .DS_Store
 d
 d/
+.env
+d/
+__pycache__/
+*.log
