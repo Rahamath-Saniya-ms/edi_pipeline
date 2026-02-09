@@ -1,0 +1,54 @@
+{
+  "850": {
+
+    "BEG": {
+      "table": "PO_Headers",
+      "match_by": "position",
+      "map": {
+        "3": "po_number",
+        "5": "po_date"
+      }
+    },
+
+    "PO1": {
+      "table": "PO_Lines",
+      "match_by": "qualifier",
+      "map": {
+        "VP": "item_code",
+        "BP": "buyer_part"
+      },
+
+      "static_map": {
+        "1": "line_num",
+        "2": "qty",
+        "3": "uom",
+        "4": "price"
+      }
+    }
+  },
+
+  "856": {
+
+    "BSN": {
+      "table": "ASN_Headers",
+      "match_by": "position",
+      "map": {
+        "2": "shipment_id",
+        "3": "asn_date",
+        "4": "asn_time"
+      }
+    }
+  },
+
+  "810": {
+
+    "BIG": {
+      "table": "Invoice_Headers",
+      "match_by": "position",
+      "map": {
+        "2": "invoice_number",
+        "4": "po_number"
+      }
+    }
+  }
+}

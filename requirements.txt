@@ -1,0 +1,8 @@
+functions-framework
+google-cloud-storage
+google-cloud-bigquery
+pyx12
+
+functions-framework==3.*
+google-cloud-storage
+google-cloud-bigquery
