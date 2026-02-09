@@ -9,7 +9,7 @@ def ensure_table_exists(project_id, dataset_id, table_name, rows):
     try:
         table = bq_client.get_table(table_ref)
     except:
-        print(f"🔥 Creating NEW table: {table_name}")
+        print(f" Creating NEW table: {table_name}")
 
         schema = []
 

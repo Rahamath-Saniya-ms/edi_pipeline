@@ -51,7 +51,7 @@ def process_edi_upload(cloud_event):
     print(f"Processing file: {filename}")
 
     # ======================================================
-    # 🔥 IDEMPOTENCY CHECK (PRODUCTION SAFE)
+    #  IDEMPOTENCY CHECK (PRODUCTION SAFE)
     # ======================================================
     check_query = f"""
         SELECT 1
@@ -147,7 +147,7 @@ def process_edi_upload(cloud_event):
         })
 
     # ======================================================
-    # 🔥 INSERT PO HEADER + LINES
+    # INSERT PO HEADER + LINES
     # ======================================================
     if po_header and po_header.get("po_number"):
 
@@ -182,7 +182,7 @@ def process_edi_upload(cloud_event):
             })
 
     # ======================================================
-    # 🔥 INSERT ASN HEADER + LINES
+    #  INSERT ASN HEADER + LINES
     # ======================================================
     if asn_header and asn_header.get("shipment_id"):
 
@@ -217,7 +217,7 @@ def process_edi_upload(cloud_event):
             })
 
     # ======================================================
-    # 🔥 INSERT INVOICE HEADER + LINES + CHARGES
+    #  INSERT INVOICE HEADER + LINES + CHARGES
     # ======================================================
     if invoice_header and invoice_header.get("invoice_number"):
 

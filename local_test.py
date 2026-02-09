@@ -50,5 +50,5 @@ if __name__ == "__main__":
         print("Error:", e)
 
     print("\n==============================")
-    print("🏁 LOCAL TEST COMPLETE")
+    print(" LOCAL TEST COMPLETE")
     print("==============================\n")
